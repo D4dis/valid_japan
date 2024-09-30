@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Barlow", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #FFF;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .25);
+}
+
+header h1 {
+    color: #000829;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .left span {
+    font-size: 24px;
+    color: #E83F43;
+    font-weight: 700;
+}
+
+header .right ul {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+header .right a {
+    color: #213442;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .3s ease-out;
+}
+
+header .right a:hover {
+    color: #E83F43;
+}
+
+header .right .active {
+    color: #E83F43;
+}
+
+/* SECTION 1 */
+
+.section1 {
+    background-image: url(../img/hero-bkg1.jpg);
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 .container {
+    padding: 32px;
+    background-color: rgba(255, 255, 255, .7);
+    width: 760px;
+    height: 332px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 6px;
+}
+
+.section1 h2 {
+    color: #213442;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.section1 p {
+    text-transform: lowercase;
+    color: #213442;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.section1 button {
+    text-transform: capitalize;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #E83F43;
+    width: 259px;
+    height: 60px;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.section1 button:hover {
+    background-color: #C53135;
+}
+
+.section1 a {
+    margin-top: 20px;
+    width: 259px;
+    height: 60px;
+}
+
+/* SECTION 2 */
+
+.section2 {
+    width: 100%;
+    height: 1268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.section2 h2 {
+    color: #213442;
+    text-transform: capitalize;
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section2 p {
+    color: #213442;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section2 .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.section2 .card {
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 32px;
+    width: 640px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.section2 button {
+    text-transform: capitalize;
+    background-color: #E83F43;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 146px;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+
+.section2 a {
+    margin-top: 16px;
+}
+
+.section2 button:hover {
+    background-color: #C53135;
+}
+
+.section2 .cards1 {
+    background-image: url(../img/history-img.jpg);
+}
+
+.section2 .cards2 {
+    background-image: url(../img/natural-img.jpg);
+}
+
+.section2 .cards3 {
+    background-image: url(../img/cultural-img.jpg);
+}
+
+.section2 .cards4 {
+    background-image: url(../img/matthieu-img.jpg);
+}
+
+/* SECTION 3 */
+
+.section3 {
+    width: 100%;
+    height: 1498px;
+}
+
+.section3 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.section3 h2 {
+    color: #213442;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section3 p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.section3 .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section3 .card {
+    min-width: 25%;
+    flex-grow: 1;
+    height: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+
+.section3 .brand {
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 h5 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1.3px;
+    text-align: center;
+}
+
+.section3 h4 {
+    text-transform: capitalize;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1.3px;
+    text-align: center;
+}
+
+.section3 .cards1 {
+    background-image: url(../img/meguro-river.jpg);
+}
+
+.section3 .cards2 {
+    background-image: url(../img/Kinkaku-ji.jpg);
+}
+
+.section3 .cards3 {
+    background-image: url(../img/Fushimi-Inari.jpg);
+}
+
+.section3 .cards4 {
+    background-image: url(../img/Himeji-Castle.jpg);
+}
+
+.section3 .cards5 {
+    background-image: url(../img/Byodoin.jpg);
+}
+
+.section3 .cards6 {
+    background-image: url(../img/Arashiyama-Bamboo-Forest.jpg);
+}
+
+.section3 .cards7 {
+    background-image: url(../img/Nachi-san.jpg);
+}
+
+.section3 .cards8 {
+    background-image: url(../img/torii-gate.jpg);
+}
+
+.section3 button {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.32px;
+    text-align: center;
+    background-color: #E83F43;
+    width: 159px;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease-out;
+    margin-top: 10px;
+}
+
+.section3 button:hover {
+    background-color: #C53135;
+}
+
+.section3 a {
+    width: 159px;
+    height: 60px;
+}
+
+/* SECTION 4 */
+
+.section4 {
+    width: 100%;
+    height: 566px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.section4 h2 {
+    color: #213442;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section4 .top p {
+    color: #213442;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.section4 .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 32px;
+}
+
+.section4 .card {
+    text-align: center;
+    width: 445px;
+    height: 172px;
+}
+
+.section4 i {
+    font-size: 50px;
+    color: #E83F43;
+    margin-bottom: 24px;
+}
+
+.section4 h3 {
+    text-transform: capitalize;
+    color: #213442;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.section4 .bottom p {
+    color: #213442;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* SECTION 5 */
+
+.section5 {
+    width: 100%;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.section5 h2 {
+    text-transform: capitalize;
+    color: #213442;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section5 p {
+    color: #213442;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.section5 .email {
+    background-color: #E9EBED;
+    color: #4D5D68;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: start;
+    padding-left: 16px;
+    width: 432px;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+}
+
+.section5 .button {
+    background-color: #E83F43;
+    color: #FFF;
+    width: 159px;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.32px;
+    margin-left: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.section5 .button:hover {
+    background-color: #C53135;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #213442;
+    width: 100%;
+    height: 90px;
+    padding: 33px 0;
+}
+
+footer p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1024px) {
+    .section2 .card {
+        width: 40%;
+    }
+
+    .section3 .card {
+        width: 20%;
+        flex-shrink: 1;
+    }
+
+    .section4 .bottom {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:768px) {
+    .section4 {
+        gap: 40px;
+    }
+
+    .section4 .bottom {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:425px) {
+    header {
+        width: 100%;
+        height: 150px;
+    }
+
+    header .right ul {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    header .right a {
+        font-size: 14px;
+    }
+
+    .section1 h2,
+    .section2 h2,
+    .section3 h2,
+    .section4 h2,
+    .section5 h2 {
+        font-size: 32px;
+    }
+
+    .section3 h4,
+    .section3 h5 {
+        font-size: 10px;
+    }
+
+    .section1 {
+        height: 100vh;
+    }
+
+    .section1 .container {
+        padding: 30px;
+    }
+
+    .section2 {
+        gap: 40px;
+    }
+
+    .section2 .cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .section2 .card {
+        width: 80%;
+        height: 30%;
+    }
+
+    .section2 .cards1,
+    .section2 .cards2,
+    .section2 .cards3,
+    .section2 .cards4 {
+        background-position: center;
+    }
+
+    .section3 .container {
+        gap: 40px;
+    }
+
+    .section3 .card {
+        width: 50%;
+        height: 240px;
+    }
+
+    .section4 {
+        height: 850px;
+    }
+
+    .section4 .bottom {
+        width: 80%;
+    }
+
+    .section5 .email {
+        width: 70%;
+        text-align: center;
+    }
+
+    .section5 .button {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .section5 .bottom form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
